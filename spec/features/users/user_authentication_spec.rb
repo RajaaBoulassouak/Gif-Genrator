@@ -67,7 +67,6 @@ describe 'user can log in and out' do
     
     expect(current_path).to eq(login_path)
     expect(page).to have_content("Logged out!")
-    save_and_open_page
   end 
 end
 
