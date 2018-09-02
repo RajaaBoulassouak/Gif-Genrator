@@ -11,8 +11,8 @@ class ApplicationController < ActionController::Base
     # ||= ensures this helper doesn't hit the database every time a user hits a web page. It will look it up once, then cache it in the @current_user variable (Memoization)
   end
   # authroize method redirects user to login page if not logged in:
-  def authorize
-    redirect_to login_path, alert: 'You must be logged in to access this page.' if current_user.nil?
-  end
+  # def authorize
+  #   redirect_to login_path, alert: 'You must be logged in to access this page.' if current_user.nil?
+  # end
     
 end
