@@ -1,7 +1,59 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+category_1 = Category.create(name: 'Pets')
+gif_1 = category_1.gifs.create(image_path: "https://media2.giphy.com/media/lHsCS3IickU7e/giphy.gif")
+gif_2 = category_1.gifs.create(image_path: "https://media0.giphy.com/media/h8E7oT2FGEJkQ/giphy.gif")
+gif_3 = category_1.gifs.create(image_path: "https://media3.giphy.com/media/qPuhFBQt8xLEY/giphy.webp") 
+gif_4 = category_1.gifs.create(image_path: "https://media3.giphy.com/media/qPuhFBQt8xLEY/giphy.gif")
+
+category_2 = Category.create(name: 'Funny')
+gif_5 = category_2.gifs.create(image_path: "")
+gif_6 = category_1.gifs.create(image_path: "")
+gif_7 = category_1.gifs.create(image_path: "")
+gif_8 = category_1.gifs.create(image_path: "")
+
+category_3 = Category.create(name: 'Sad')
+gif_9 = category_3.gifs.create(image_path: "")
+gif_10 = category_1.gifs.create(image_path: "")
+gif_11 = category_1.gifs.create(image_path: "")
+gif_12 = category_1.gifs.create(image_path: "")
+
+category_4 = Category.create(name: 'Music')
+gif_13 = category_4.gifs.create(image_path: "")
+gif_14 = category_1.gifs.create(image_path: "")
+gif_15 = category_1.gifs.create(image_path: "")
+gif_16 = category_1.gifs.create(image_path: "")
+
+category_5 = Category.create(name: 'Dance')
+gif_17 = category_6.gifs.create(image_path: "")
+gif_18 = category_1.gifs.create(image_path: "")
+gif_19 = category_1.gifs.create(image_path: "")
+gif_20 = category_1.gifs.create(image_path: "")
+
+category_6 = Category.create(name: 'Food')
+gif_21 = category_1.gifs.create(image_path: "")
+gif_22 = category_1.gifs.create(image_path: "")
+gif_23 = category_1.gifs.create(image_path: "")
+gif_24 = category_1.gifs.create(image_path: "")
+
+category_7 = Category.create(name: 'Dance')
+gif_25 = category_1.gifs.create(image_path: "")
+gif_26 = category_1.gifs.create(image_path: "")
+gif_27 = category_1.gifs.create(image_path: "")
+gif_28 = category_1.gifs.create(image_path: "")
+
+category_8 = Category.create(name: 'Dance')
+gif_29 = category_1.gifs.create(image_path: "")
+gif_30 = category_1.gifs.create(image_path: "")
+gif_31 = category_1.gifs.create(image_path: "")
+gif_32 = category_1.gifs.create(image_path: "")
+
+category_9 = Category.create(name: 'Dance')
+gif_33 = category_1.gifs.create(image_path: "")
+gif_34 = category_1.gifs.create(image_path: "")
+gif_35 = category_1.gifs.create(image_path: "")
+gif_36 = category_1.gifs.create(image_path: "")
+
+ategory_10 = Category.create(name: 'Dance')
+gif_37 = category_1.gifs.create(image_path: "")
+gif_38 = category_1.gifs.create(image_path: "")
+gif_39 = category_1.gifs.create(image_path: "")
+gif_40 = category_1.gifs.create(image_path: "")
