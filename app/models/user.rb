@@ -3,4 +3,5 @@ class User < ApplicationRecord
 	validates :email, presence: true, uniqueness: true
   validates_presence_of :name
   validates_presence_of :password, require: true
+  enum role: %w(default admin)
 end
