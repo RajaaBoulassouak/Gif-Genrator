@@ -1,0 +1,5 @@
+<h1> All Gifs </h1>
+
+<% @gifs.each do |gif| %>
+  <%= image_tag(gif.image_path, size: "300x400", id: "image_#{gif.id}") %>
+<% end %>

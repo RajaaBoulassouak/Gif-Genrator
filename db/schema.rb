@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20180902231827) do
   enable_extension "plpgsql"
 
   create_table "gifs", force: :cascade do |t|
-    t.string "image_url"
+    t.string "image_path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
