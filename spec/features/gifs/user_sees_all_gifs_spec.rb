@@ -12,5 +12,6 @@ describe 'user visits gif index page' do
     expect(current_path).to eq(gifs_path)
     expect(page).to have_css("#image_#{gif_1.id}")
     expect(page).to have_css("#image_#{gif_2.id}")
+    save_and_open_page
   end
 end
