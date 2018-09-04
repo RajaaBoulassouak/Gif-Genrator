@@ -1,7 +1,7 @@
 class GifsController < ApplicationController
 
   def index 
-    @categories = Category.all
+    @catergories = Category.all
     @gifs = Gif.all
   end
 

@@ -1,5 +1,13 @@
 <h1> All Gifs </h1>
 
 <% @gifs.each do |gif| %>
-  <%= image_tag(gif.image_path, size: "200x300", id: "image_#{gif.id}") %>
+  <%= gif.category.name %>
+  <%= link_to image_tag(gif.image_path, size: "200x300", id: "image_#{gif.id}"), gif_path(gif) %>
+  <% if current_user %>
+      <%= form_for current_user.favorites.new, url: user_favorites_path(current_user) do |f| %>
+       <%= f.hidden_field :user_id, value: current_user.id %>
+       <%= f.hidden_field :gif_id, value: gif.id  %>
+       <%= f.submit "Add Gif To Your Favorites" %>
+      <% end %>
+  <% end %>
 <% end %>

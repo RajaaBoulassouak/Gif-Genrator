@@ -1,0 +1,6 @@
+<h1> Your Favorite Gifs </h1>
+
+<% @favorites.each do |favorite| %>
+  <%= favorite.gif.category.name %>
+  <%= image_tag(favorite.gif.image_path, size: "200x300", id: "image_#{favorite.gif.id}") %>
+<% end %>

@@ -24,7 +24,6 @@ describe 'Default user can not create a new category' do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
     visit new_admin_category_path
-    save_and_open_page
 
     expect(page).to_not have_content("Create a New Category") 
     expect(page).to have_content("The page you were looking for doesn't exist.")
