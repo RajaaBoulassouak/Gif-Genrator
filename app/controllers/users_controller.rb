@@ -10,16 +10,15 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
-    # store all emails in lowercase to avoid duplicates and case-sensitive login errors:
+    @user = User.create(user_params)
     @user.email.downcase!
     if @user.save
       session[:user_id] = @user.id 
       redirect_to user_path(@user)
       flash[:notice] = "Successfully created account for #{@user.name}!"
     else
-      flash[:alert] = "Oops, couldn't create account. Please use a valid email and password and try again."
-      redirect_to new_user_path
+      flash[:alert] = 'Oops, could not create account. Please use a valid email and password and try again.'
+      render :new
     end
   end
 
