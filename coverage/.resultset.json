@@ -255,13 +255,6 @@
         1,
         null
       ],
-      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/welcome_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
       "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/application_controller.rb": [
         1,
         1,
@@ -316,39 +309,6 @@
         null,
         null
       ],
-      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/sessions_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        2,
-        2,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/gifs_controller.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        null,
-        null,
-        null
-      ],
       "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/favorites_controller.rb": [
         1,
         null,
@@ -374,6 +334,16 @@
         null,
         null
       ],
+      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/gifs_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
       "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/admin/categories_controller.rb": [
         1,
         1,
@@ -389,8 +359,38 @@
         2,
         null,
         null
+      ],
+      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1536094617
+    "timestamp": 1536100437
   }
 }
