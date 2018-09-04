@@ -129,7 +129,6 @@
         null,
         1,
         1,
-        1,
         null,
         1,
         1,
@@ -265,13 +264,6 @@
         1,
         null
       ],
-      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/welcome_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
       "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/application_controller.rb": [
         1,
         1,
@@ -295,6 +287,39 @@
         null,
         null,
         null,
+        null,
+        null
+      ],
+      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/gifs_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
         null,
         null
       ],
@@ -363,16 +388,6 @@
         null,
         null
       ],
-      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/gifs_controller.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        null,
-        null,
-        null
-      ],
       "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/favorites_controller.rb": [
         1,
         null,
@@ -397,24 +412,8 @@
         1,
         null,
         null
-      ],
-      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/rajaaboulassouak/turing/2module/rails-projects/gif-generator/app/controllers/admin/base_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
       ]
     },
-    "timestamp": 1536027494
+    "timestamp": 1536085305
   }
 }
