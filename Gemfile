@@ -43,6 +43,7 @@ group :development, :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'simplecov'
+  gem 'giphy'
 end
 
 group :development do

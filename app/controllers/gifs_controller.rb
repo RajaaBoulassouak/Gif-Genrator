@@ -4,5 +4,4 @@ class GifsController < ApplicationController
     @catergories = Category.all
     @gifs = Gif.all
   end
-
 end
