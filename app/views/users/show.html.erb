@@ -1,7 +1,22 @@
-<h1> Your Favorite Gifs </h1>
-<%= link_to 'Back to All Gifs', gifs_path %>
-<% @favorites.each do |favorite| %>
-  <%= favorite.gif.category.name %>
-  <%= link_to image_tag(favorite.gif.image_path, size: "200x300", id: "image_#{favorite.gif.id}"), gif_path(favorite.gif) %>
-  <%= link_to 'Unfavorite Gif', user_favorite_path(current_user, favorite), method: :delete  %>
+<div>
+  <h1 class="display-6 text-center"> Your Favorite Gifs </h1>
+  </br>
+  <h4 class="display-10 text-center"> <%= link_to 'This way to all Gifs', gifs_path %>
+</div>
+</br>
+
+<% @favorites_slices.each do |group| %>
+  <div class="card-deck">
+    <% group.each do |favorite| %>
+      <div class="card" size:"300x500" background:"#E0FFFF;">
+        <%=link_to image_tag(favorite.gif.image_path, size: "337x500", id: "image_#{favorite.gif.id}")%>
+        <div class="card-body">
+        <h4><p class="card-text"><%= favorite.gif.category.name %></p></h4>
+          <p><%= link_to 'Unfavorite Gif', user_favorite_path(current_user, favorite), method: :delete %></p>
+          </br>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  </br>
 <% end %>
