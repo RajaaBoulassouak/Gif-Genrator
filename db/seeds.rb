@@ -1,7 +1,7 @@
 category_1 = Category.create(name: 'Pets')
 gif_1 = category_1.gifs.create(image_path: "https://media2.giphy.com/media/lHsCS3IickU7e/giphy.gif")
 gif_2 = category_1.gifs.create(image_path: "https://media0.giphy.com/media/h8E7oT2FGEJkQ/giphy.gif")
-gif_3 = category_1.gifs.create(image_path: "https://media3.giphy.com/media/qPuhFBQt8xLEY/giphy.webp") 
+gif_3 = category_1.gifs.create(image_path: "https://media2.giphy.com/media/xTiTnp3zOLUGbBF4ME/giphy.gif") 
 gif_4 = category_1.gifs.create(image_path: "https://media3.giphy.com/media/qPuhFBQt8xLEY/giphy.gif")
 
 category_2 = Category.create(name: 'Food')

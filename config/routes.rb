@@ -6,20 +6,21 @@ Rails.application.routes.draw do
   get '/login'     => 'sessions#new'
 	post '/login'    => 'sessions#create'
 	get '/logout' => 'sessions#destroy'
+	
+	resources :gifs, only: [:index]
   	
-  resources :users do 
-		resources :favorites
+  resources :users, only: [:new, :show, :create] do
+		resources :favorites, only: [:create, :destroy]
 	end
 	
 	resources :categories do 
-		resources :gifs
+		resources :gifs, only: [:index]
 	end 
 	
-	resources :gifs
-	
 	namespace :admin do
-  	resources :categories
-		resources :gifs
+  	resources :categories, except: [:edit, :update]
+		resources :gifs, only: [:new, :create, :destroy]
 	end
 		
 end
+
