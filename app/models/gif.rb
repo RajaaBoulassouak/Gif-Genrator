@@ -9,8 +9,4 @@ class Gif < ApplicationRecord
     joins(:category).order('categories.name')
   end
   
-  def self.favorites_sorted_by_category
-    joins(:favorites).order('categories.name')
-  end
-  # joins(:items).order("items.unit_price desc").first.name
 end

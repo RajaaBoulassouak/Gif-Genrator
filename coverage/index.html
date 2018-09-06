@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-05T18:27:50-06:00">2018-09-05T18:27:50-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-05T22:04:43-06:00">2018-09-05T22:04:43-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">79.4%</span></span>
+    (<span class="covered_percent"><span class="red">75.23%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.9
+         0.85
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>19</b> files in total.
-    <b>199</b> relevant lines. 
-    <span class="green"><b>158</b> lines covered</span> and
-    <span class="red"><b>41</b> lines missed </span>
+    <b>218</b> relevant lines. 
+    <span class="green"><b>164</b> lines covered</span> and
+    <span class="red"><b>54</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,18 +62,18 @@
       
       <tr>
         <td class="strong"><a href="#fd1e2a0a8cb1a7ae285a86ab4e5f2dd77ccdd85e" class="src_link" title="app/controllers/admin/categories_controller.rb">app/controllers/admin/categories_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="red strong">42.86 %</td>
+        <td>36</td>
+        <td>21</td>
+        <td>9</td>
+        <td>12</td>
+        <td>0.4</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#1b6f8e142cb76568230f83f92da89d6a45fc54be" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>20</td>
+        <td>14</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -83,7 +83,7 @@
       <tr>
         <td class="strong"><a href="#d2f59b863d296978b2ad7bae87a942ade9f38b33" class="src_link" title="app/controllers/favorites_controller.rb">app/controllers/favorites_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>23</td>
+        <td>18</td>
         <td>11</td>
         <td>11</td>
         <td>0</td>
@@ -113,9 +113,9 @@
       <tr>
         <td class="strong"><a href="#e04e3a1ed49a48ff45b1293911278714d4028b5a" class="src_link" title="app/controllers/welcome_controller.rb">app/controllers/welcome_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>2</td>
-        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -133,7 +133,7 @@
       <tr>
         <td class="strong"><a href="#a132de149ead208b3cae8fccd25f2e96862aedbf" class="src_link" title="app/models/category.rb">app/models/category.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
+        <td>6</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
@@ -142,18 +142,18 @@
       
       <tr>
         <td class="strong"><a href="#07c790fc042083a9462222ed2cd6ba3db074d320" class="src_link" title="app/models/favorite.rb">app/models/favorite.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">80.0 %</td>
+        <td>8</td>
+        <td>5</td>
         <td>4</td>
-        <td>3</td>
-        <td>3</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>1</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#fd39df0d33d2c47fda52882e0d852cccb1f7802c" class="src_link" title="app/models/gif.rb">app/models/gif.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>12</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -320,11 +320,11 @@
         <div class="source_table" id="fd1e2a0a8cb1a7ae285a86ab4e5f2dd77ccdd85e">
   <div class="header">
     <h3>app/controllers/admin/categories_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">42.86 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>21</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>12</b> lines missed.</span>
     </div>
   </div>
   
@@ -337,28 +337,214 @@
           <code class="ruby">class Admin::CategoriesController &lt; Admin::BaseController</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">  def new </code>
+          
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    @catgory = Category.new</code>
+          <code class="ruby">  def index</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="missed" data-hits="0" data-linenumber="4">
           
           
-          <code class="ruby">  end </code>
+          <code class="ruby">    @categories = Category.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    @category = Category.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @category = Category.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">    category = Category.new(category_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    if category.save</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">      redirect_to admin_categories_path</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">      flash[:notice] = &quot;Category #{category.name} successfully created!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">      flash[:alert] = &quot;Didn&#39;t work, try again.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">      redirect_to new_admin_category_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">    category = Category.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">    category.destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">    redirect_to admin_categories_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def category_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">      params.require(:category).permit(:name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">end </code>
         </li>
       
     </ol>
@@ -455,46 +641,10 @@
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">  # authroize method redirects user to login page if not logged in:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">  # def authorize</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  #   redirect_to login_path, alert: &#39;You must be logged in to access this page.&#39; if current_user.nil?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
           <code class="ruby">    </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">end</code>
@@ -531,28 +681,28 @@
           <code class="ruby">  </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def index</code>
+          <code class="ruby">  def create</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   @user = User.find(params[:user_id])</code>
+          <code class="ruby">    @favorite = Favorite.create(favorite_params)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   @favorites = @user.gifs</code>
+          <code class="ruby">    redirect_to user_path(params[:user_id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">  # end </code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -564,94 +714,64 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create</code>
+          <code class="ruby">  def destroy</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    @favorite = Favorite.create(favorite_params)</code>
+          <code class="ruby">    favorite = Favorite.find(params[:id])</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    redirect_to user_path(params[:user_id])</code>
+          <code class="ruby">    favorite.destroy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    redirect_to user_path(params[:user_id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="13">
           
-          <code class="ruby">  def destroy</code>
+          
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    @favorite = Favorite.find(params[:id])</code>
+          <code class="ruby">  private </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    @favorite.destroy</code>
+          <code class="ruby">    def favorite_params </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">    redirect_to user_path(params[:user_id])</code>
+          <code class="ruby">      params.require(:favorite).permit(:user_id, :gif_id)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def favorite_params </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      params.require(:favorite).permit(:user_id, :gif_id)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -770,13 +890,13 @@
         <li class="covered" data-hits="3" data-linenumber="5">
           <span class="hits">3</span>
           
-          <code class="ruby">    @favorites = Favorite.where(user_id: params[:id])</code>
+          <code class="ruby">    favorites = Favorite.where(user_id: params[:id])</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="6">
           <span class="hits">3</span>
           
-          <code class="ruby">    @favorites_slices = @favorites.each_slice(4)</code>
+          <code class="ruby">    @favorites_slices = favorites.each_slice(4)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -939,8 +1059,8 @@
     <h3>app/controllers/welcome_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -960,19 +1080,7 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def index </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby">end</code>
@@ -1067,30 +1175,6 @@
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">  # def self.gifs_sorted_by_category</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">  #   joins(:gifs).group(&#39;categories.id&#39;).order(:name)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
           <code class="ruby">end</code>
         </li>
       
@@ -1102,11 +1186,11 @@
         <div class="source_table" id="07c790fc042083a9462222ed2cd6ba3db074d320">
   <div class="header">
     <h3>app/models/favorite.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">80.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -1132,6 +1216,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.favorites_sorted_by_category</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    joins(:gif).order(&#39;gifs.categories.name&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -1217,6 +1325,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
