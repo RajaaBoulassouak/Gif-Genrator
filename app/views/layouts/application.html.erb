@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GifGenerator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title> Gif-Generator </title>
+  
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'application' %>  
+    
+    <style>
+      body {
+            background: #FFFFFF;
+            font-color
+            }
+    </style>
   </head>
-
+  
   <body>
-    <% if current_user %>
-      <%= "Logged in as #{current_user.name}" %> | <%= link_to 'Log Out', logout_path, method: :delete %>
-    <% else %>
-    <!-- not logged in -->
-      <%= link_to 'Log In', login_path %> or <%= link_to 'Sign Up', new_user_path %>
-    <% end %>
+    <nav class="navbar sticky-top navbar navbar-dark bg-primary text_inline">
+    <a class="navbar-brand" href="/">
+      <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/328/752/fdc.gif" width="50" height="50" class="d-inline-block align-top" alt="">
+      Gif Generator
+    </a>
+    <ul class="navbar-nav">
+      <% if current_user %>
+        <li class="nav-item">
+          <a><%= "Logged in as #{current_user.name}" %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Log Out</a>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/new">Sign Up</a>
+        </li>
+      <% end %>
+    </ul>
+    </nav>
+    
+    
     <hr>
     <% if notice %>
       <%= notice %>
@@ -25,5 +57,7 @@
     <% end %>
 	
     <%= yield %>
+    
+
   </body>
 </html>

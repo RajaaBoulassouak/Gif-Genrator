@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-04T14:56:57-06:00">2018-09-04T14:56:57-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-04T19:06:41-06:00">2018-09-04T19:06:41-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.21
+         1.2
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>20</b> files in total.
-    <b>206</b> relevant lines. 
-    <span class="green"><b>206</b> lines covered</span> and
+    <b>207</b> relevant lines. 
+    <span class="green"><b>207</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -77,7 +77,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>3.4</td>
+        <td>3.1</td>
       </tr>
       
       <tr>
@@ -93,7 +93,7 @@
       <tr>
         <td class="strong"><a href="#5908d9a5cf6861821db0030fd29ce2411f6004a3" class="src_link" title="app/controllers/gifs_controller.rb">app/controllers/gifs_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>8</td>
+        <td>7</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
@@ -143,9 +143,9 @@
       <tr>
         <td class="strong"><a href="#a132de149ead208b3cae8fccd25f2e96862aedbf" class="src_link" title="app/models/category.rb">app/models/category.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>10</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -203,7 +203,7 @@
       <tr>
         <td class="strong"><a href="#265592bbcbb9f4eb528dcc40e46252ca405f1481" class="src_link" title="spec/features/user_sees_all_gifs_spec.rb">spec/features/user_sees_all_gifs_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>18</td>
+        <td>34</td>
         <td>12</td>
         <td>12</td>
         <td>0</td>
@@ -426,8 +426,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="7">
-          <span class="hits">17</span>
+        <li class="covered" data-hits="15" data-linenumber="7">
+          <span class="hits">15</span>
           
           <code class="ruby">    @current_user ||= User.find(session[:user_id]) if session[:user_id]</code>
         </li>
@@ -723,12 +723,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -1174,8 +1168,8 @@
     <h3>app/models/category.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1195,19 +1189,49 @@
           <code class="ruby">  validates :name, presence: true, uniqueness: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">  has_many :gifs</code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :favorites, through: :gifs</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  # def self.gifs_sorted_by_category</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  #   joins(:gifs).group(&#39;categories.id&#39;).order(:name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
@@ -2242,7 +2266,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &#39;user can see all gifs&#39; do</code>
+          <code class="ruby">  it &#39;should show all gifs&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -2324,6 +2348,102 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # it &#39;should show all gifs ordered by category sorted alphabetically&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  #   user = User.create!(name: &#39;Fay&#39;, email: &#39;fay@gmail.com&#39;, password: &#39;Test123&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  #   category_1 = Category.create!(name: &#39;Pets&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  #   gif_1 = category_1.gifs.create!(image_path: &#39;https://giphy.com/gifs/chihuahua-funny-cute-wW95fEq09hOI8&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  #   category_2 = Category.create!(name: &#39;Funny&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  #   gif_2 = category_2.gifs.create!(image_path: &#39;https://media3.giphy.com/media/110F1JFzWKtiA8/giphy.gif&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  #   allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  # </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  #   visit gifs_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  # </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  #   expect(current_path).to eq(gifs_path)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  #   expect(page).to have_content(&quot;#{gif_2.category.name} #{gif_1.category.name}&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">end</code>
