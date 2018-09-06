@@ -2,8 +2,8 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
-    @favorites = Favorite.where(user_id: params[:id])
-    @favorites_slices = @favorites.each_slice(4)
+    favorites = Favorite.where(user_id: params[:id])
+    @favorites_slices = favorites.each_slice(4)
   end
   
   def new

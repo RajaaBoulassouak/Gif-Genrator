@@ -8,4 +8,5 @@ class Gif < ApplicationRecord
   def self.gifs_sorted_by_category
     joins(:category).order('categories.name')
   end
+  
 end
