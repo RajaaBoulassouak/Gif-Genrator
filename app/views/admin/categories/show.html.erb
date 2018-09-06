@@ -1,5 +1,7 @@
 <h1><%= @category.name %> Gifs </h1>
 
+<%= link_to "Create A New Gif", new_admin_gif_path %>
+
 <% @category.gifs.each do |gif|  %>
   <%=link_to image_tag(category.gif.image_path, size: "337x500", id: "image_#{category.gif.id}") %>
   <%= link_to "Delete", admin_gif_path(gif), method: :delete %>
