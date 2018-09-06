@@ -13,13 +13,13 @@ Rails.application.routes.draw do
 		resources :favorites, only: [:create, :destroy]
 	end
 	
-	resources :categories do 
+	resources :categories, only: [:show] do 
 		resources :gifs, only: [:index]
 	end 
 	
 	namespace :admin do
   	resources :categories, except: [:edit, :update]
-		resources :gifs, only: [:new, :create, :destroy]
+		resources :gifs, only: [:index, :new, :create, :destroy]
 	end
 		
 end

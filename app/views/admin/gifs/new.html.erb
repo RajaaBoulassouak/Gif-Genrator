@@ -1,1 +1,8 @@
 <h1>Create A New Gif</h1>
+
+<%= form_for([:admin, @gif]) do |f| %>
+  <%= f.label :image_path %>
+  <%= f.file_field :image_path %>
+
+  <%= f.submit %>
+<% end %>

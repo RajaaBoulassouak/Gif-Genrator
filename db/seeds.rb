@@ -1,3 +1,6 @@
+admin = User.create(name: 'Rajaa', email: "rajaa@email.com", password: '12345', role: 1)
+user = User.create(name: 'Hans', email: "hans@email.com", password: '12345', role: 0)
+
 category_1 = Category.create(name: 'Pets')
 gif_1 = category_1.gifs.create(image_path: "https://media2.giphy.com/media/lHsCS3IickU7e/giphy.gif")
 gif_2 = category_1.gifs.create(image_path: "https://media0.giphy.com/media/h8E7oT2FGEJkQ/giphy.gif")

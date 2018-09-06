@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'Admin visits new category page' do
   it 'allows admin to create a new category' do
-    admin = User.create(name: 'Rajaa', password: '1234', role: 1)
+    admin = User.create(name: 'Rajaa', email: 'rajaa@email.com', password: '1234', role: 1)
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
